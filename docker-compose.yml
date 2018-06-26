@@ -8,10 +8,10 @@ services:
     ports:
       - "1433:1433"
     environment:
-      SA_PASSWORD: "Alaska2017"
+      SA_PASSWORD: "PTVN@2018"
       ACCEPT_EULA: "Y"
     healthcheck:
-      test: sqlcmd -S db1.internal.prod.example.com -U SA -P 'Alaska2017' -Q 'select 1'
+      test: sqlcmd -S db1.internal.prod.example.com -U SA -P 'PTVN@2018' -Q 'select 1'
     networks:
       mynetwork:
         aliases:
